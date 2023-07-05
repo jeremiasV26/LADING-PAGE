@@ -1,24 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+:root {
+  --fondo: #2d004d;
+  --letras: #a54c4c;
+  --gris: #383c41;
+  --wadu: #200136;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: white;
 }
 body {
-  background-color: black;
+  background-color: var(--wadu);
 }
 nav {
   font-family: "Bebas Neue", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #383c41;
+  background-color: var(--fondo);
   font-size: 22px;
 }
 ul a {
-  background-color: aqua;
+  background-color: var(--letras);
   text-decoration: none;
-  color: black;
+  color: white;
 }
 ul {
   margin-inline: 200px;
@@ -29,4 +36,74 @@ ul {
 img {
   width: 150px;
   margin-inline: 40px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Bebas Neue", sans-serif;
+}
+#hero {
+  max-width: 1200px;
+  margin-top: 85px;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+}
+.hero-info {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  width: 70%;
+}
+.hero-info h1 {
+  font-size: 60px;
+  min-width: 500px;
+  width: 80%;
+  font-weight: 700;
+  font-family: "Bebas Neue", sans-serif;
+}
+.hero-info p {
+  font-size: 20px;
+  font-weight: 100;
+  font-family: "Bebas Neue", sans-serif;
+}
+.hero-button {
+  display: flex;
+  gap: 150px;
+}
+.hero-button a {
+  padding: 10px;
+  margin: 10;
+  background-color: #a54c4c;
+  width: fit-content;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+.hero-card {
+  justify-content: center;
+  display: flex;
+  padding: 10px;
+  background-color: var(--letras);
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.hero-card img {
+  width: 450px;
+  display: flex;
+}
+#about {
+  font-size: 20px;
+  font-family: "Bebas Neue", sans-serif;
+  margin: 50px;
+  padding: 50px;
+  max-width: 1200px;
 }
