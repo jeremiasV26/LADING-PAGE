@@ -1,0 +1,44 @@
+@media (max-width: 992px) {
+  #hero {
+    padding-right: 20px;
+  }
+  .hero-info {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .hero-info h1 {
+    font-size: 40px;
+  }
+  .hero-info p {
+    width: 80%;
+  }
+
+  .hero-card {
+    width: 90%;
+  }
+  .data {
+    gap: 15px;
+  }
+}
+@media (max-width: 576px) {
+  ul {
+    margin-inline: 100px;
+    gap: 50px;
+  }
+  .hero-card {
+    display: none;
+  }
+  .tutor-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #contacto {
+    width: 95%;
+  }
+  .data {
+    margin-right: 30px;
+    gap: 10px;
+  }
+}
